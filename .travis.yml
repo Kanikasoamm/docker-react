@@ -9,3 +9,13 @@ before_install:
 
 script:
   - docker run -e CI=true kanikasoamm/docker-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-1'
+  app: 'frontend'
+  env: 'frontend-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-767397887552'
+  bucket_path: 'docker'
+  access_key_id: AKIA3FLD2PZAKQXZOGHK
+  secret_access_key: 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
