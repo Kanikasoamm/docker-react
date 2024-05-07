@@ -12,11 +12,11 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: 'us-east-1'
-  app: 'frontend'
-  env: 'frontend-env'
-  bucket_name: 'elasticbeanstalk-us-east-1-767397887552'
-  bucket_path: 'frontend'
+  region: "us-east-1"
+  app: "frontend"
+  env: "frontend-env"
+  bucket_name: "elasticbeanstalk-us-east-1-767397887552"
+  bucket_path: "frontend"
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
   on:
